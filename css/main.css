@@ -602,9 +602,13 @@ address {
 .footer-wrapper {
   display: block;
 }
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 768px) {
   .footer-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -711,12 +715,12 @@ address {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: 93px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-form {
     display: block;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -747,7 +751,7 @@ address {
 }
 
 .footer-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
