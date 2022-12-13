@@ -568,7 +568,7 @@ address {
   display: flex;
   gap: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .clients__list {
     flex-wrap: wrap;
     justify-content: center;
