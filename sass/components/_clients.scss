@@ -1,0 +1,29 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.client__link {
+  fill: var(--icon-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}

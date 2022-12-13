@@ -1,0 +1,48 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--title-color);
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+ 
+}
+
+.section {
+  @media screen and (max-width: 480px) {
+    padding: 60px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 99px 0;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding: 94px 0;
+  }
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 769px) {
+    margin-bottom: 30px;
+  }
+}

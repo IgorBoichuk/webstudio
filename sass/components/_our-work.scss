@@ -1,0 +1,40 @@
+.our-work {
+  @media screen and (max-width: 480px) {
+    display: none; 
+  }
+}
+
+.work__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.work__item {
+  position: relative;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work__title {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.work-pictures {
+  width: 370px;
+  height: 294px;
+}
