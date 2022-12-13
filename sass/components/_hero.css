@@ -1,47 +1,33 @@
 .hero__section {
   position: relative;
   min-width: 468px;
-  // max-height: 600px;
   text-align: center;
-
   padding: 200px 0;
   background: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .hero__section {
     min-width: 768px;
     background: #c4c4c4;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
   }
+}
 
-  @media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
+  .hero__section {
     max-width: 1600px;
-
     background: #c4c4c4;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(/images/hero-Img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-Img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,8 +62,10 @@
   color: var(--title-color);
   width: 695px;
   margin: 0 auto;
+}
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .hero__title {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
@@ -98,8 +86,10 @@
   letter-spacing: 0.06em;
   color: var(--title-color);
   padding: 10px 32px;
+}
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .button {
     padding: 10px 24px;
   }
 }

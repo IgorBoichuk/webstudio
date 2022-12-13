@@ -133,8 +133,11 @@
 .navigation__contacts-item:not(:last-child) {
   // margin-right: 50px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: 769px) {
+    margin-right: 50px;
   }
 }
 
