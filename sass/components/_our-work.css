@@ -1,5 +1,5 @@
-.our-work {
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .our-work {
     display: none;
   }
 }
@@ -20,9 +20,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-
   background: rgba(47, 48, 58, 0.8);
-
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;

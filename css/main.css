@@ -429,7 +429,7 @@ address {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .our-work {
     display: none;
   }
@@ -437,23 +437,20 @@ address {
 
 .work__list {
   display: flex;
+  gap: 30px;
   list-style: none;
   padding: 0;
 }
 
 .work__item {
   position: relative;
-  margin-right: 30px;
-}
-.work__item:last-child {
-  margin-right: 0;
+  max-width: 370px;
 }
 
 .work__title {
   position: absolute;
   bottom: 0;
-  width: 370px;
-  height: 70px;
+  width: 100%;
   background: rgba(47, 48, 58, 0.8);
   color: var(--title-color);
   font-weight: 700;
@@ -466,8 +463,7 @@ address {
 }
 
 .work-pictures {
-  width: 370px;
-  height: 294px;
+  width: 100%;
 }
 
 .team {
