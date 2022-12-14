@@ -1,7 +1,6 @@
 .hero__section {
   position: relative;
-  min-width: 468px;
-  // max-height: 600px;
+  max-width: 480px;
   text-align: center;
 
   padding: 200px 0;
@@ -69,20 +68,29 @@
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.61;
+  max-width: 360px;
   color: var(--title-color);
-  width: 695px;
   margin: 0 auto;
 
-  @media screen and (max-width: 480px) {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    width: 360px;
-  }
+  // @media screen and (max-width: 481px) {
+  //   font-weight: 900;
+  //   font-size: 44px;
+  //   line-height: 1.36;
+  //   letter-spacing: 0.06em;
+  //   text-transform: uppercase;
+  //   color: var(--title-color);
+  //   width: 695px;
+  //   margin: 0 auto;
+  // }
+
+  // @media screen and (max-width: 480px) {
+  //   font-weight: 900;
+  //   font-size: 26px;
+  //   line-height: 1.61;
+  //   max-width: 360px;
+  // }
 }
 
 .button {
