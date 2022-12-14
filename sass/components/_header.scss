@@ -172,26 +172,18 @@
   border: none;
   padding: 0;
   margin-left: auto;
+
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
 }
 
 .burger-menu-icon {
-  fill: black;
-}
-
-
-// класи для стилізації меню, самого меню пока немає
-.mob-menu {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100vw;
-  height: 100vw;
-  background-color: #ececec;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  fill: var(--black-color);
 }
 
 .close-btn {
+  position: absolute;
   display: block;
   width: 40px;
   height: 40px;
@@ -199,5 +191,91 @@
   border: none;
   padding: 0;
   margin-left: auto;
-  margin-bottom: 30px;
+  top: 0;
+  right: 0;
+}
+
+.burger-close-icon {
+  fill: var(--black-color);
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--title-color);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
+}
+
+.mobile-navigation__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.mobile-navigation__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-accent-nav {
+  color: var(--accent-color);
+}
+
+.mobile-navigation__link {
+}
+
+.mobile-navigation__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile-nav-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-nav-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.mobile-contacts-item {
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.mobile-menu-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.mobile-social-list:not(:first-child) {
+  
+  border-left: 2px solid tomato;
+  margin-right: 10px;
+  padding-left: 10px;
 }
