@@ -303,7 +303,7 @@ address {
   background-color: var(--title-color);
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 40px;
+  padding-left: 15px;
 }
 @media screen and (min-width: 481px) {
   .mobile-menu {
@@ -311,11 +311,17 @@ address {
   }
 }
 
-.mobile-navigation__list {
+.mobile-menu-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mobile-navigation__list {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 200px;
 }
 
 .mobile-navigation__item {
@@ -327,12 +333,14 @@ address {
 
 .mobile-accent-nav {
   color: var(--accent-color);
+  padding-left: 5px;
 }
 
 .mobile-navigation__contacts {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 60px;
 }
 
 .mobile-nav-phone {
@@ -357,15 +365,22 @@ address {
 
 .mobile-menu-social {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 10px;
-  margin-top: 50px;
 }
 
-.mobile-social-list:not(:first-child) {
+.mobile-social-item:not(:first-child) {
   border-left: 2px solid tomato;
-  margin-right: 10px;
   padding-left: 10px;
+}
+
+.mobile-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .hero__section {
