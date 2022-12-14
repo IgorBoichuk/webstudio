@@ -191,8 +191,8 @@
   border: none;
   padding: 0;
   margin-left: auto;
-  top: 0;
-  right: 0;
+  top: 13px;
+  right: 15px;
 }
 
 .burger-close-icon {
@@ -217,10 +217,12 @@
 }
 
 .mobile-menu-wrap {
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .mobile-navigation__list {
   display: flex;
@@ -280,19 +282,17 @@ justify-content: space-evenly;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 10px;
-  
 }
 
 .mobile-social-item:not(:first-child) {
-  
-  border-left: 2px solid tomato;  
+  border-left: 2px solid tomato;
   padding-left: 10px;
 }
 
 .mobile-social-link {
   font-weight: 500;
-font-size: 18px;
-line-height: 1.22;
-letter-spacing: 0.02em;
-color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }

@@ -75,6 +75,12 @@ body {
   overflow: hidden;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -285,8 +291,8 @@ address {
   border: none;
   padding: 0;
   margin-left: auto;
-  top: 0;
-  right: 0;
+  top: 13px;
+  right: 15px;
 }
 
 .burger-close-icon {
@@ -312,9 +318,10 @@ address {
 }
 
 .mobile-menu-wrap {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .mobile-navigation__list {
