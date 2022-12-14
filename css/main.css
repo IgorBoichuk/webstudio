@@ -352,6 +352,7 @@ address {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 }
 
@@ -361,10 +362,12 @@ address {
 
 .benefits__item {
   max-width: 450px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
     max-width: 345px;
+    margin-bottom: 0;
   }
 }
 
@@ -420,7 +423,6 @@ address {
 @media screen and (min-width: 481px) {
   .benefits__description {
     max-width: 345px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -599,6 +601,12 @@ address {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 769px) {
+  .footer-wrapper {
+    display: flex;
+  }
+}
+
 .footer-contact-wrapper {
   display: block;
 }
@@ -608,6 +616,14 @@ address {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer-contact-wrapper {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 0px;
   }
 }
 
@@ -621,6 +637,11 @@ address {
   display: block;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 769px) {
+  .footer-logo {
+    text-align: start;
+  }
+}
 
 .address-list {
   font-style: normal;
@@ -632,6 +653,11 @@ address {
 @media screen and (max-width: 480px) {
   .address-list {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .address-list {
+    text-align: start;
   }
 }
 
@@ -655,6 +681,11 @@ address {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 769px) {
+  .logo-contacts {
+    margin-right: auto;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .footer-social {
@@ -673,6 +704,11 @@ address {
 @media screen and (max-width: 480px) {
   .foter-text {
     text-align: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .foter-text {
+    text-align: start;
   }
 }
 
@@ -712,10 +748,30 @@ address {
   text-align: center;
   max-width: 100%;
 }
+@media screen and (min-width: 769px) {
+  .footer-form {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .subscribe-wrap {
   display: block;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .subscribe-wrap {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .subscribe-wrap {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .subscribe-text {
@@ -725,6 +781,12 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 769px) {
+  .subscribe-text {
+    text-align: start;
+  }
 }
 
 .footer-input {
@@ -737,6 +799,11 @@ address {
   padding-left: 16px;
   color: var(--title-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 769px) {
+  .footer-input {
+    width: 360px;
+  }
 }
 
 .footer-btn {
