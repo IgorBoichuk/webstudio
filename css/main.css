@@ -976,12 +976,18 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
+  width: 90%;
+  padding: 20px;
   background-color: var(--title-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 481px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1134,10 +1140,10 @@ address {
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
   display: flex;
   align-items: center;
 }
@@ -1151,16 +1157,30 @@ address {
   border: 2px solid var(--primary-color);
   margin-right: 8px;
 }
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+  }
+}
 
 .contract-link {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
   margin-left: 5px;
+}
+@media screen and (min-width: 480px) {
+  .contract-link {
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-checkbox:checked + .check-text::before {
