@@ -3,7 +3,7 @@
   padding: 60px 0;
 }
 .footer-wrapper {
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
   }
 }
@@ -133,11 +133,10 @@
   display: block;
   text-align: center;
   max-width: 100%;
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1024px) {
     margin-left: auto;
     display: flex;
     flex-direction: column;
-    
   }
 }
 

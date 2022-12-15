@@ -1,16 +1,25 @@
 .clients__list {
   display: flex;
-  gap: 30px;
+  // flex-wrap: wrap;
+  gap: 10px;
+  
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media screen and (min-width: 801px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .client__link {
   fill: var(--icon-color);
-  width: 170px;
+  max-width: 170px;
+  
+  
+  
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -26,4 +35,9 @@
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
   }
+}
+
+.client__item {
+  max-width: 170px;
+  width: calc(100% / 2 - 30px);
 }

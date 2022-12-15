@@ -1,12 +1,13 @@
 .benefits__list {
-  // display: flex;
-  // gap: 30px;
-
   @media screen and (min-width: 481px) {
     display: flex;
-    gap: 30px;    
+    gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 801px) {
+    margin-bottom: 0;
   }
 }
 
@@ -15,7 +16,7 @@
 }
 
 .benefits__item {
-  max-width: 450px;  
+  max-width: 450px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
@@ -74,11 +75,9 @@
 
   @media screen and (min-width: 481px) {
     max-width: 345px;
-    
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 270px;
-    
   }
 }
