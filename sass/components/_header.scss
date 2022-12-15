@@ -118,8 +118,6 @@
     display: none;
   }
 
-  
-
   @media screen and (min-width: 1024px) {
     display: flex;
     margin: 0;
@@ -129,7 +127,7 @@
 .navigation__contacts-item:not(:last-child) {
   // margin-right: 50px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1024px) {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 769px) {

@@ -246,7 +246,7 @@ address {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .navigation__contacts-item:not(:last-child) {
     margin-bottom: 10px;
   }
